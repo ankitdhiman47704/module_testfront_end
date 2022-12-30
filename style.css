@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    height: 60px;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    height: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-nav-container{
+    padding-left: 15px;
+    
+}
+.left-nav-container h2{
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.right-nav-container{
+    margin-right: 38px;
+}
+.right-nav-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 20px;
+}
+main{
+    margin-top: 62px;
+    background-color: black;
+    color: white;
+}
+.landing-heading h2{
+    font-weight: 700;
+    font-size: 150px;
+    animation: littleFade 5s ease-in infinite;
+}
+@keyframes littleFade{
+    0%{
+        color: white;
+    }25%{
+        color: aqua;
+    }75%{
+        color: aquamarine;
+    }100%{
+        color: white;
+    }
+}
+.landing-page-section{
+    position:relative;
+    padding-left :60px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    
+}
+.landing-img img{
+    height: 300px;
+}
+.landing-img{
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+}
+.landing-arrow{
+    display: flex;
+    justify-content: center;
+}
+.landing-arrow a{
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    font-size: 35px;
+}
+.about-us-section{
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 100px 60px 40px;
+    
+}
+.about-left-banner img{
+    width: 320px;
+}
+.about-right-banner{
+    margin-left: 50px;
+}
+.about-us-heading{
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 20PX;
+}
+.about-us-content{
+    font-weight: 300;
+    font-size: 18px;
+}
+.services-section{
+    padding: 80px 60px 50px;
+    background-color: white;
+    color: black;
+}
+.services-heading h2{
+    font-weight: 700;
+    font-size: 70px;
+}
+.services-cards{
+    margin-top: 30px;
+    display: flex;
+    overflow-x: scroll;
+}
+.services-card-item:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.services-card-item{
+    border: 2px solid black;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 30px 35px;
+    margin-right:40px;
+    transition: 0.3s;
+}
+.services-card-item h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.services-card-item p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.contact-section {
+    background-color: black;
+    color: white;
+    padding: 60px ;
+}
+.contact-heading h4{
+    font-weight: 700;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.contact-form .input-fields{
+    width: 75vw;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.contact-form .submit-button{
+    padding: 8px 30px;
+}
+
+@media (min-width:1020px) and (max-width:1175px) {
+    .landing-img{
+        position: absolute;
+        right: 0;
+    }
+    
+}
+@media (min-width:870px) and (max-width:1019px) {
+    .landing-img{
+        position:initial;
+    }
+}
+@media (min-width:700px) and (max-width:869px) {
+    .landing-heading h2{
+        font-size: 100px;
+    }
+    .landing-img{
+        position:initial;
+    }
+    .landing-img img{
+        height: 200px;
+    }
+    .about-us-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:699px){
+    header{
+        height: 90px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .left-nav-container{
+        padding-top: 10px;
+    }
+    .landing-heading h2{
+        font-size: 60px;
+    }
+    .landing-img{
+        position: initial;
+        justify-content: center;
+    }
+    .landing-page-section{
+        width:100%;
+    }
+}
